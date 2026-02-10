@@ -1,5 +1,6 @@
 //this is a comment
 
+
 //data types
 typeof "Dave" //string
 typeof 42 //number
