@@ -1,5 +1,6 @@
 //Conditionals: If Statements
 //sytntax
+
 if (condition) {
     //run some code
 }
