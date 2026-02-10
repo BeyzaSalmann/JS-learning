@@ -52,7 +52,7 @@ else{
 }
 console.log(grade);
 
-//Example 3 = Decision tree
+//Example 3 
 if (playerOne === computer){
     //tie game
 }
