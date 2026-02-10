@@ -12,4 +12,5 @@ console.log(Math.min(2,0.5,9));// Returns the smallest of the given numbers
 console.log(Math.max(2,0.5,9));// Returns the largest of the given numbers
 console.log(Math.random());// Generates a random number between 0 and 1
 //From 1 to 10
+
 console.log(Math.floor(Math.random() * 10 + 1));//1-10 random number generator
