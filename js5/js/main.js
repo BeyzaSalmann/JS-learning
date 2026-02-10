@@ -1,5 +1,4 @@
 // Math Methods and Properties
-
 console.log(Math.PI);//Returns the value of PI
 console.log(Math.trunc(Math.PI)); // Returns the integer part of PI
 console.log(Math.round(3.5));// Rounds the number to the nearest integer
