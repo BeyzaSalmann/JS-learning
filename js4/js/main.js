@@ -1,6 +1,6 @@
 //Numbers
 
-//An integer is a whole number.
+//An integer is a whole number
 const myNumber =42;
 console.log(myNumber); //42
 
