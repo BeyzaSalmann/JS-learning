@@ -1,5 +1,6 @@
 // Temel yapı ve constructor
 // Pizza fabrikamızın temel şablonu
+
 class Pizza {
     constructor(pizzaSize) {
         this.size = pizzaSize; // Dışarıdan gelen boyut
