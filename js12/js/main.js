@@ -1,39 +1,57 @@
-//Loops 
-let myNumber = 0;
-while (myNumber < 50) {
-    console.log(myNumber);
-    myNumber ++;
+//Functions
+//Metotlar fonksiyonların içine yerleştirilmişlerdir.
+
+//Sytax
+function sum () {
+    return 2 +2;
 }
 
-let myNumber2 = 50;
-while (myNumber2 <50)   {
-    myNumber2 += 2;
-    console.log(myNumber2);
-}
-do {
-    console.log(myNumber2);
-} while (myNumber2 < 50);
+console.log(sum()); //4
 
-//Example2
-
-let name ="Dave";
-for (let i = 0; i < name.length; i++) {
-    console.log(name.charAt(i));
+//Parametreli fonksiyon
+function sum2 (num1, num2) {
+    return num1 + num2;
 }
 
-//Example3
+console.log(sum2(5, 10)); //15
 
-let name2=  "Dave";
-let counter = 0;
-let myLetter;
-while (counter <=3) {
-    myLetter = name2[ counter];
-    console.log(myLetter);
-if (counter === 1) {
-    counter += 2;
-    continue;
+//Example
+function sum3 (num1, num2) {
+    console.log(num1);
+    console.log(num2);
+    return num1 + num2;
 }
-if (myLetter === "v") break;
-counter++;
+console.log(sum3);
+
+//Example
+function sum4 (num1, num2) {
+    if (num2 === undefined) {
+        return num1 + num1;
+    }
+    return num1 + num2;
 }
-console.log(counter);
+
+console.log(sum4(2, 3)); //5
+
+//Example
+function getUserNameFromEmail(email) {
+    return email.slice(0 , email.indexOf("@"));
+}
+
+console.log(getUserNameFromEmail("user@Github.com")); 
+
+//Example
+
+const getUserNameFromEmail2 = (email) => {
+    return email.slice(0 , email.indexOf("@"));
+};
+
+console.log(getUserNameFromEmail2("john@davesdomain.com")); 
+
+//Example
+
+const toProperCase = (name) => {
+    return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+};
+console.log(toProperCase("jOhN")); //John
+
