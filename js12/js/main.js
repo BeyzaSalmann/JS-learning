@@ -1,6 +1,7 @@
 //Functions
 //Metotlar fonksiyonların içine yerleştirilmişlerdir.
 
+
 //Sytax
 function sum () {
     return 2 +2;
