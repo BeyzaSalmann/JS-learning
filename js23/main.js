@@ -1,4 +1,5 @@
 // Web Storage API (Yerel Depolama)
+
 //Web sitelerinin, kullanıcının tarayıcısında veri saklamasına izin veren bir mekanizmadır.
 // Geleneksel değişkenlerin aksine, bu veriler sayfa yenilendiğinde veya tarayıcı kapatıldığında (türüne göre) silinmez.
 // Veriler her zaman "Key-Value" (Anahtar-Değer) çiftleri şeklinde saklanır.
