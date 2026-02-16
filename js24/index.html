@@ -1,0 +1,21 @@
+<!-- ES Moduls devasa bir kod dosyasını (spagetti kod), bağımsız ve yönetilebilir küçük parçalara (dosyalara) böler.
+Export : Bir dosyanın içindeki fonksiyonu veya sınıfı "dışarıya açmak" için kullanılan vizedir.
+Import : Başka bir dosyada hazırlanan paketleri kendi dosyamızın içine çekmektir.
+HTML Zorunluluğu:Tarayıcıda bu sistemin çalışması için script etiketi mutlaka  <script type="module"> 
+şeklinde tanımlanmalıdır.
+Normal scriptlerde her şey globaldir. Yani bir dosyada tanımladığın değişken her yerden erişilebilir.Ancak modüllerde her dosya kapalı bir kutudur.
+Tarayıcıya type="module" dediğinde ona şunu söylemiş olursun: "Bu dosyanın içinde import ve export komutları göreceksin, bunları hata olarak algılama, dosyalar arasındaki vize trafiğini (veri alışverişini) yönet."  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Modules - Beyza</title>
+</head>
+<body>
+    <h1>JavaScript Modules Öğreniyoruz</h1>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
