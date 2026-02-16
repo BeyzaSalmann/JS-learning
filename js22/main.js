@@ -1,4 +1,5 @@
 //Event Listeners
+
 //Kullanıcı ile web sitesi arasındaki etkileşimi (tıklama, yazma vb.) sağlar.
 //JavaScript'in belirli bir eylemi "dinlemesini" ve o an tepki vermesini sağlar.
 //Event Listeners mantığı: Belirli bir hedefi (örneğin siyah bir kutuyu) takibe alıp, onda beklenen bir olay (tıklama gibi) gerçekleştiğinde, önceden belirlenen tepkiyi (renk değişimi gibi) anında yerine getirme işlemidir. 
