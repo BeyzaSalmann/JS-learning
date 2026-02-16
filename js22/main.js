@@ -32,17 +32,7 @@ for (let i = 1; i <= 12; i++) {
 // Event Listeners 
 // Sayfadaki tüm yeni oluşturulan div'leri yakala
 const allDivs = view2.querySelectorAll("div");
-// Listedeki her bir kutuya tek tek ulaşıyoruz.
-allDivs.forEach((div) => { //forEach liste üzerinde döngü kurmayı sağlar
-    // Her kutuya bir "tıklama" (click) dinleyicisi ekle
-    div.addEventListener("click", (event) => {
-        // Tıklanan kutunun rengini mavi yap
-        event.target.style.backgroundColor = "blue";//event.target kutuya tıklandığı an js 'in o kutuyu hedef almasını sağlar
-        console.log(`Kutu ${event.target.textContent} tıklandı!`);
-    });
-});
-
-
+// Listedeki her bir kutuya tek tek ulaşıyoruz
 
 allDivs.forEach((div) => { //her kutuya tek tek uğrar ve o kutuyu div ismiyle temsil ederek içeri girmeni sağlar
     // Her kutuya bir "tıklama" (click) dinleyicisi ekle
