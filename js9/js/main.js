@@ -12,11 +12,11 @@ console.log(myBoolen);
 
 //Example 2
 
-let name = prompt("Please enter your name"); 
-if (name) {
-    console.log(name.length);//name.length, name değişkeninin içindeki karakter sayısını döndürür. Eğer kullanıcı bir isim girerse, bu isimdeki karakter sayısını konsola yazdırır.
-    console.log(name.trim().length);//name.trim().length, name değişkeninin başındaki ve sonundaki boşlukları kaldırarak karakter sayısını döndürür. Eğer kullanıcı bir isim girerse, bu isimdeki karakter sayısını başındaki ve sonundaki boşluklar olmadan konsola yazdırır.
-    console.log(name.trim());//name.trim(), name değişkeninin başındaki ve sonundaki boşlukları kaldırır. Eğer kullanıcı bir isim girerse, bu ismi başındaki ve sonundaki boşluklar olmadan konsola yazdırır.
+let userName = prompt("Please enter your name"); 
+if (userName) {
+    console.log(userName.length);//userName.length, userName değişkeninin içindeki karakter sayısını döndürür. Eğer kullanıcı bir isim girerse, bu isimdeki karakter sayısını konsola yazdırır.
+    console.log(userName.trim().length);//userName.trim().length, userName değişkeninin başındaki ve sonundaki boşlukları kaldırarak karakter sayısını döndürür. Eğer kullanıcı bir isim girerse, bu isimdeki karakter sayısını başındaki ve sonundaki boşluklar olmadan konsola yazdırır.
+    console.log(userName.trim());//userName.trim(),userName değişkeninin başındaki ve sonundaki boşlukları kaldırır. Eğer kullanıcı bir isim girerse, bu ismi başındaki ve sonundaki boşluklar olmadan konsola yazdırır.
 } else {
     console.log("You didn't enter your name.");//Eğer kullanıcı hiçbir şey girmezse veya "Cancel" düğmesine tıklarsa, name değişkeni falsy bir değere sahip olur (örneğin, boş string veya null). Bu durumda, else bloğu çalışır ve kullanıcıya isim girmediği mesajı konsola yazdırılır.
 }
