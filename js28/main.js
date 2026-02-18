@@ -9,4 +9,5 @@ document.getElementById("phoneNum").addEventListener("input", (event) => {
     } else {
         input.style.borderColor = "red";   // Format yanlışsa kırmızı
     }
+    
 });
