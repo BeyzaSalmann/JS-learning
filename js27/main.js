@@ -1,5 +1,6 @@
 // REGULAR EXPRESSIONS (REGEX) - DÜZENLİ İFADELER
 // TANIM: Metinler (string) içinde belirli karakter desenlerini aramak, eşleştirmek ve manipüle etmek için kullanılan özel bir sözdizimidir.
+
 // TEMEL YAPI VE BAYRAKLAR (FLAGS):
     // /pattern/flags  -> Örnek: /beyza/gi
     //- g (global): Metindeki tüm eşleşmeleri bulur (ilkinde durmaz).
