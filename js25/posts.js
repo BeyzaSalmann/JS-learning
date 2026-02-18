@@ -1,7 +1,6 @@
 // DATA SOURCE: JSONPlaceholder (https://jsonplaceholder.typicode.com/posts)
 //DESCRIPTION: Bu dosya, uygulamamızda Higher Order Functions (filter, map, reduce) tarafından işlenecek olan ham "Post" verilerini (dizi içinde objeler) tutar.
 
-
 // JSON data from https://jsonplaceholder.typicode.com/posts
 
 export const posts = [
