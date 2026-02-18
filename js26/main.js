@@ -1,5 +1,4 @@
 // ASYNC JS (PROMISES, FETCH, ASYNC & AWAIT)
-
 // PROMISE :JavaScript'te bir işlemin (genelde veri çekme) sonucunun "gelecekte" tamamlanacağına dair verilen bir sözdür.JavaScript'e "Bu işi yap, bitince bana haber ver" diyoruz.
     //Pending (Beklemede): İşlem sürüyor.
     //Fulfilled (Tamamlandı): Veri başarıyla geldi.
