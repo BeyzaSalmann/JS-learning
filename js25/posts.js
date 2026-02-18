@@ -1,29 +1,37 @@
-// ES Modules (ESM), JavaScript'in modern ve standartlaşmış modül sistemidir.
-//Basitçe; devasa bir kod yığını yazmak yerine, projenizi mantıklı, bağımsız ve tekrar kullanılabilir küçük parçalara (dosyalara) ayırmanızı sağlayan bir mimaridir.
-//ES Modules iki temel eylem üzerine kuruludur:
-// Export (Dışa Aktarma)
-//Import (İçe Aktarma)
+// DATA SOURCE: JSONPlaceholder (https://jsonplaceholder.typicode.com/posts)
+//DESCRIPTION: Bu dosya, uygulamamızda Higher Order Functions (filter, map, reduce) tarafından işlenecek olan ham "Post" verilerini (dizi içinde objeler) tutar.
 
 
-// MODÜLLER: EXPORT (DIŞA AKTARMA) MANTIĞI
-// Export Nedir ?: Bir dosyadaki değişken, fonksiyon veya sınıfı diğer dosyaların kullanımına açar.
-// Export Default: Bir dosyadan sadece bir tane "varsayılan" değer gönderilebilir. İçe aktarılırken süslü parantez {} kullanılmaz.
-// Named Export (İsimlendirilmiş): Birden fazla gönderilebilir. İçe aktarılırken mutlaka aynı isimle ve {} içinde çağrılmalıdır.
+// JSON data from https://jsonplaceholder.typicode.com/posts
 
-
-// export default: Bu dosyadan çıkan ana yapı budur. (Bir tane olabilir)
-export default class User {
-    constructor(name, age) {
-        this.name = name;
-        this.age = age;
-    }
-}
-
-// Named Export: Yan özellikler/fonksiyonlar. (İstediğin kadar olabilir)
-export function printName(user) {
-    console.log(`Kullanıcının adı: ${user.name}`);
-}
-
-export function printAge(user) {
-    console.log(`Kullanıcının yaşı: ${user.age}`);
-}
+export const posts = [
+  {
+    userId: 1,
+    id: 1,
+    title:
+      "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    body:
+      "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+  },
+  {
+    userId: 1,
+    id: 2,
+    title: "qui est esse",
+    body:
+      "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
+  },
+  {
+    userId: 1,
+    id: 3,
+    title: "ea molestias quasi exercitationem repellat qui ipsa sit aut",
+    body:
+      "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut"
+  },
+  {
+    userId: 1,
+    id: 4,
+    title: "eum et est occaecati",
+    body:
+      "ullam et saepe reiciendis voluptatem adipisci\nsit amet autem asum"
+  }
+];

@@ -1,0 +1,58 @@
+/* Temel sıfırlama */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sayfayı ortalayan ve koyu yapan kısım */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333; /* Videodaki koyu arka plan */
+}
+
+/* HTML'de kullandığın flexCenter sınıfı */
+.flexCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Beyaz kutu görünümü */
+.phoneView {
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    width: 380px;
+}
+
+.phoneForm label {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Giriş kutusu stili */
+.phoneNum {
+    padding: 12px;
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    text-align: center;
+    outline: none;
+}
+
+/* Örnek formatların olduğu alt yazı */
+.phoneFormat {
+    margin-top: 1.5rem;
+    color: #555;
+    font-size: 0.9rem;
+    text-align: center;
+    line-height: 1.4;
+}

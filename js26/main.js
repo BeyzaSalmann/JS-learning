@@ -9,17 +9,15 @@
 
 // ASYNC & AWAIT:Asenkron kodları, sanki satır satır sırayla (senkron) çalışıyormuş gibi daha okunabilir yazmamızı sağlayan modern sözdizimidir (Syntactic Sugar).İşlemler çok hızlı olduğu için JavaScript'e "Dur ve veri gelene kadar bekle" talimatını await ile veriyoruz.
 
-// Bir API'den veri çekme fonksiyonu
-//const getAllUserEmails = async () => 
+//Fonksiyonun başına eklenen async anahtar kelimesi, JavaScript'e bu fonksiyonun içinde "beklememiz gereken" (asenkron) işlemler olacağını bildirir.
+const getAllUsersEmails = async () =>  
+
     {
-    // 1. Veri gelene kadar bekle (Fetch)
-    const response = await fetch("https://jsonplaceholder.typicode.com/users");
+    const response = await fetch("https://jsonplaceholder.typicode.com/users"); 
     
-    // 2. Gelen cevabı JSON (anlaşılır veri) formatına çevir
-    const jsonUserData = await response.json();
+    const jsonUserData = await response.json();// Gelen cevabı JSON (anlaşılır veri) formatına çevir
     
-    // 3. Veriyi işle (Örn: Sadece e-postaları al)
-    const userEmailArray = jsonUserData.map(user => {
+    const userEmailArray = jsonUserData.map(user => {  //Gelen tüm kullanıcı verilerini tarar ve her birinden sadece email bilgisini çekip yeni bir dizi (userEmailArray) oluşturur.
         return user.email;
     });
 
@@ -27,13 +25,14 @@
 };
 
 // Fonksiyonu çalıştır
-getAllUserEmails();
+getAllUsersEmails();
 
 
-// JS26 - Promises / Fetch / Async & Await
 
-// 1. PROMISE YAPISI (Temel Mantık)
-// Bir işlem başarılı (resolve) veya başarısız (reject) olabilir.
+
+// PROMISE YAPISI 
+//new Promise ile bir "söz" oluşturulur.
+//İşlem başarılıysa resolve, başarısızsa reject fonksiyonu çağrılır.
 const myPromise = new Promise((resolve, reject) => {
     const error = false;
     if (!error) {
@@ -43,7 +42,8 @@ const myPromise = new Promise((resolve, reject) => {
     }
 });
 
-// Promise'i kullanma (Then/Catch metodu)
+//Bir işlem bittiğinde değer bir sonraki .then bloğuna aktarılır.
+//Zincirdeki herhangi bir noktada hata oluşursa doğrudan .catch bloğuna zıplanır.
 myPromise
     .then(value => {
         return value + " + yeni veri";
@@ -56,8 +56,11 @@ myPromise
     });
 
 
-// 2. FETCH API (Gerçek Veri Çekme)
+// FETCH API 
+//fetch() fonksiyonu doğrudan bir Promise döndürür.
 // JSONPlaceholder sitesinden kullanıcı verilerini çekiyoruz.
+//Sunucudan gelen ilk cevap hamdır; response.json() ile bu ham veri işlenebilir bir nesneye dönüştürülür.
+//İkinci .then bloğunda, veri artık elimizdedir ve forEach gibi metotlarla ekrana yazdırılabilir.
 const users = fetch("https://jsonplaceholder.typicode.com/users")
     .then(response => {
         return response.json();
@@ -69,8 +72,14 @@ const users = fetch("https://jsonplaceholder.typicode.com/users")
     });
 
 
-// 3. ASYNC & AWAIT (En Modern ve Profesyonel Yöntem)
-// Videoda vurgulanan "bekle ve çalıştır" mantığı budur.
+// ASYNC & AWAIT (En Modern ve Profesyonel Yöntem)
+//Syntactic Sugar: .then().then() kalabalığını ortadan kaldırır; kodu sanki düz bir satırmış gibi yukarıdan aşağıya okumamızı sağlar.
+//await Duraklatması: JavaScript'e "Sunucudan veri (fetch) gelene kadar bu satırda dur ve bekle" emrini verir.
+//Hata Yönetimi (try...catch): Modern yöntemde .catch() yerine try/catch blokları kullanılır.
+//try: Kodun normal çalışmasını dener.
+//catch: Eğer internet koparsa veya veri çekilemezse devreye girip hatayı yakalar.
+//Hata Kontrolü: if (!response.ok) throw Error(...) satırı ile sunucudan gelen 404 gibi hataları manuel olarak yakalayıp yönetirsin.
+
 const getAllUserEmails = async () => {
     try {
         const response = await fetch("https://jsonplaceholder.typicode.com/users");
